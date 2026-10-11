@@ -74,7 +74,7 @@ I also extracted **Year / Quarter / Month** from the order date to enable time-b
 - **KPI Cards** ← for the headline numbers
 - **Slicers** (Year, Quarter, Month, Category) ← connected to everything, so one click filters the entire dashboard
 
-![Dashboard Preview](assets/Dashboard-demo.gif)
+![Dashboard Preview](assets/Dashboard-demo.mp4)
 
 ---
 
@@ -176,6 +176,7 @@ But the real mindset shift? I used to see a chart as an output. Now I see it as 
  ┃ ┣ Northwind-Dataset.xlsx                    
  ┣ assets/                           # screenshots used in this README
  ┃ ┣ Dashboard-preview.jpg
+ ┃ ┣ Dashboard-demo.mp4
  ┃ ┣ Total-Sales-Trend.jpg
  ┃ ┣ Relation-between-tables.jpg
  ┃ ┣ Top-8-Sales-By-Product.jpg
