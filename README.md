@@ -190,7 +190,7 @@ But the real mindset shift? I used to see a chart as an output. Now I see it as 
 
 ---
 
-## 🚀 How to Use
+##  How to Use
 
 1. Download `Sales Analysis Dashboard for a Grocery Business.xlsx` from the `dashboard/` folder
 2. Open it in **Excel 2016+** or **Microsoft 365** (required for Power Query)
