@@ -57,6 +57,8 @@ Loaded all source tables into Power Query so every transformation is logged, rep
 
 Instead of fragile nested VLOOKUPs, I merged the tables in Power Query on their business keys (`OrderID`, `ProductID`, `CategoryID`) to build one clean, analysis-ready dataset.
 
+![Data Model](assets/Relation-between-tables.jpg)
+
 ### 4️⃣ Feature Engineering
 
 This was the fun part. Revenue didn't exist in the raw data, so I created it — with the discount factored in, because a 20%-off sale is not the same as a full-price sale:
@@ -71,6 +73,8 @@ I also extracted **Year / Quarter / Month** from the order date to enable time-b
 - **Sorted Bar Charts** with a Top N filter ← for product & category rankings
 - **KPI Cards** ← for the headline numbers
 - **Slicers** (Year, Quarter, Month, Category) ← connected to everything, so one click filters the entire dashboard
+
+![Dashboard Preview](assets/Dashboard-preview.jpg)
 
 ---
 
@@ -92,7 +96,7 @@ I also extracted **Year / Quarter / Month** from the order date to enable time-b
 - That last one is wild: in only 5 months, 1998 delivered ~**71%** of ALL of 1997. The business didn't just grow — it accelerated.
 - Clear seasonal peaks: **Q4 1997** ($181K) and **Q1 1998** ($298K)
 
-![Sales Trend](assets/sales-trend.png)
+![Sales Trend](assets/Total-Sales-Trend.jpg)
 
 ###  Top Products: 8 Giants Among 77
 
@@ -111,10 +115,14 @@ The Top 8 products generated ~**$504K** ≈ **40%** of total revenue:
 
 **Côte de Blaye** alone accounts for ~**11%** of all revenue. A star product… but also a **concentration risk**: if its supply ever breaks, there's a big hole in revenue.
 
+![Top Sales By Products](assets/Top-8-Sales-By-Product.jpg)
+
 ###  Category Performance
 
 - **Beverages** ($267,868) and **Dairy Products** ($234,507) are the revenue engines — together roughly **40%** of total sales
-- At the bottom: **Grains/Cereals** ($95,745) and **Produce** ($99,985) — either they need a boost, or we need to find out why they're lagging
+- At the bottom: **Grains/Cereals** ($95,745) and **Produce** ($99,985) — either they need a boost, or we need to find out why they're lagging.
+
+![Top Sales By Categories](assets/Top-Sales-By-Product-Categories.jpg)
 
 ###  Discount Analysis (My Favorite Finding)
 
@@ -125,6 +133,8 @@ Overall average discount: **5.62%**. But here's the twist:
 - **Grains/Cereals** (4.53%) & **Produce** (4.54%) get the least discount and sell the least — prime candidates for a test promotion
 
 This is exactly the kind of question a good dashboard helps you ask — a question you'd easily miss staring at static reports.
+
+![Average Discount by Products](assets/Average-Discount-By-Category.jpg)
 
 ---
 
@@ -161,23 +171,28 @@ But the real mindset shift? I used to see a chart as an output. Now I see it as 
 ---
 
 ## 🗂️ Repository Structure
- sales-analysis-dashboard-excel
-┣ assets/ # screenshots used in this README
-┃ ┣  dashboard-preview.png
-┃ ┗  sales-trend.png
-┣ dashboard/
-┃ ┗  Sales-Analysis-Dashboard.xlsx
-┣ report/
-┃ ┗ Sales-Analysis-Report.pdf
-┗  README.md
-
-text
+```
+ ┣ Dataset/
+ ┃ ┣ Northwind-Dataset.xlsx                    
+ ┣ assets/                           # screenshots used in this README
+ ┃ ┣ Dashboard-preview.jpg
+ ┃ ┣ Total-Sales-Trend.jpg
+ ┃ ┣ Relation-between-tables.jpg
+ ┃ ┣ Top-8-Sales-By-Product.jpg
+ ┃ ┣ Top-Sales-By-Product-Categories.jpg
+ ┃ ┗ Average-Discount-By-Category.jpg
+ ┣ dashboard/
+ ┃ ┗ Sales Analysis Dashboard for a Grocery Business.xlsx
+ ┣ report/
+ ┃ ┗ Sales Analysis Dashboard for a Grocery Business.pdf
+ ┗ README.md
+```
 
 ---
 
 ## 🚀 How to Use
 
-1. Download `Sales-Analysis-Dashboard.xlsx` from the `dashboard/` folder
+1. Download `Sales Analysis Dashboard for a Grocery Business.xlsx` from the `dashboard/` folder
 2. Open it in **Excel 2016+** or **Microsoft 365** (required for Power Query)
 3. Click **Enable Editing** if prompted
 4. Play with the **Slicers** (Year / Quarter / Month / Category) and watch the whole dashboard respond ✨
