@@ -74,7 +74,7 @@ I also extracted **Year / Quarter / Month** from the order date to enable time-b
 - **KPI Cards** ← for the headline numbers
 - **Slicers** (Year, Quarter, Month, Category) ← connected to everything, so one click filters the entire dashboard
 
-![Dashboard Preview](assets/Dashboard-preview.jpg)
+![Dashboard Preview](assets/Dashboard-demo.gif)
 
 ---
 
