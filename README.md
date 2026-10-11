@@ -176,7 +176,7 @@ But the real mindset shift? I used to see a chart as an output. Now I see it as 
  ┃ ┣ Northwind-Dataset.xlsx                    
  ┣ assets/                           # screenshots used in this README
  ┃ ┣ Dashboard-preview.jpg
- ┃ ┣ Dashboard-demo.mp4
+ ┃ ┣ Dashboard-demo.gif
  ┃ ┣ Total-Sales-Trend.jpg
  ┃ ┣ Relation-between-tables.jpg
  ┃ ┣ Top-8-Sales-By-Product.jpg
